@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Up</title>
+  </head>
+  <body>
+    <table id="header">
+      <tbody>
+        <tr valign="bottom">
+          <td><h1 id="title">Up</h1></td>
+          <td><h3 id="subtitle">Welcome to easy money</h3></td>
+          <td><img src="zap.gif" height="50px" width="50px" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="main">
+      <table cellspacing="0">
+        <tbody>
+          <tr id="savings" class="content-tr">
+            <td>
+              <h4>Map out your money goals</h4>
+              <p>
+                Create Savers for all your money goals, commitments, bills, a
+                home...whatever! Every saver can have its own name, emoji and
+                target amount so you always know where you stand.
+              </p>
+            </td>
+            <td class="img-td"><img src="holding-phone.jpg" /></td>
+          </tr>
+          <tr id="2up" class="content-tr">
+            <td class="img-td"><img src="2-up.gif" /></td>
+            <td>
+              <h4>2Up</h4>
+              <p>
+                2Up is a new way to fight finances together in co-op mode.
+                Easily invite your Player 2 and join forces to battle bills,
+                save for shared goals, share expenses and track spending.
+              </p>
+            </td>
+          </tr>
+          <tr id="budgeting" class="content-tr">
+            <td>
+              <h4>Budgeting</h4>
+              <p>
+                Put your budget on cruise control. Say goodbye to nasty
+                surprises, know where every buck goes and how much you can
+                spend.
+              </p>
+            </td>
+            <td class="img-td"><img src="phone.png" /></td>
+          </tr>
+          <tr id="pay-day" class="content-tr">
+            <td class="img-td"><img src="evolution.png" /></td>
+            <td>
+              <h4>Pay Day</h4>
+              <p>
+                Use your Up account to receive your salary and pay your bills.
+                Pay Day will give you a "spendable balance" so you better know
+                what you can safely spend before you get paid next. Let us do
+                the math.
+              </p>
+            </td>
+          </tr>
+          <tr id="save-up-1000" class="content-tr">
+            <td>
+              <h4>Never saved $1000?</h4>
+              <p>
+                Dream of having a grand on hand? Save Up $1000 will help you get
+                there by setting a simple weekly savings challenge. Each week
+                you’ll pick one of a few amounts to save. Some big. Some small.
+                We’ll stash your cash safely away so it will stack up (though if
+                you need it, that’s OK: just close your Challenge).
+              </p>
+            </td>
+            <td class="img-td"><img src="save-up-1000.png" /></td>
+          </tr>
+          <tr id="pay-splitting" class="content-tr">
+            <td class="img-td"><img src="pay-splitting.png" /></td>
+            <td>
+              <h4 id="pay-splitting-title">Pay Splitting</h4>
+              <p>
+                Pay Splitting lets you carve up your pay into a bunch of
+                different Savers as soon as it hits your account, and before you
+                get a chance to spend it. An easier way to stockpile for your
+                lifestyle. Whether you're paid the same amount each time or not,
+                you can instantly carve up your payday cash and choose your own
+                savings adventure.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="up-logo.png" />
+    </div>
+  </body>
+  <script>
+    var count = 0;
+    var title = document.getElementById("title");
+    var subtitle = document.getElementById("subtitle");
+    var paySplitTitle = document.getElementById("pay-splitting-title");
+    var psTitleOptions = [
+      "Pay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Splitting",
+      "Pay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S plittin g",
+      "Pay&nbsp;&nbsp;&nbsp;&nbsp;S p litti n g",
+      "Pay&nbsp;&nbsp;S p l i t t i n g",
+    ];
+    var paySplitCount = 0;
+
+    function colorChange() {
+      if (count % 2 == 0) {
+        title.style.color = "yellow";
+        subtitle.style.color = "white";
+      } else {
+        title.style.color = "white";
+        subtitle.style.color = "yellow";
+      }
+      count++;
+    }
+
+    function paySplittingAnim() {
+      paySplitTitle.innerHTML = psTitleOptions[paySplitCount];
+      if (paySplitCount < psTitleOptions.length - 1) {
+        paySplitCount++;
+      } else {
+        paySplitCount = 0;
+      }
+    }
+  </script>
+</html>

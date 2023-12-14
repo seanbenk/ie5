@@ -1,0 +1,80 @@
+body {
+  background-color: #ff7a64;
+  font-family: helvetica;
+  margin-top: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#header {
+  width: 100%;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#main {
+  height: 1000px;
+  background-color: white;
+  padding-top: 12px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-left: 8px;
+  font-weight: 900;
+  color: white;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  color: yellow;
+  margin-bottom: 4px;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+tr {
+  padding: 0;
+  margin: 0;
+}
+
+td {
+  padding: 0;
+  margin: 0;
+}
+
+#up-logo {
+  text-align: center;
+}
+
+#budgeting {
+  background-color: red;
+}
+
+#pay-day {
+  background-color: red;
+}
+
+.content-tr td {
+  padding: 16px;
+}
+
+.img-td {
+  text-align: center;
+}
